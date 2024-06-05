@@ -1,38 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #cdedfd;
+  background-image: linear-gradient(319deg, #cdedfd 0%, #ffec826e 37%, #ffcfd2 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
-.App-link {
-  color: #61dafb;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(170, 170, 170, 0.185);
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #424242;
+  font-family: "Josefin Sans", sans-serif;
+  border-bottom:6px solid #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-form div {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.login-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #3b3b3b;
+  border-bottom: 4px solid #424242;
+  width: 300px;
+  border-radius: 15px;
+  font-family: "Spectral SC", serif;
+  transition: border-bottom 0.3s ease; /* Adding transition effect */
+}
+
+.login-form input:focus {
+  border-bottom: 4px solid #61dafb; /* Changing border color on focus */
+}
+
+
+.login-form input:focus {
+  outline: none;
+  border-color: #252525;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fbfd79;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  border: 1px solid #000000;
+  border-bottom:4px solid #000000;
+}
+
+.login-form button:click {
+  background-color: #fbfd74;
+}
+
+.login-form button:hover {
+  background-color: #fbff00;
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons .icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #133c55;
+
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.2);
+  color: #2b546d;
 }
